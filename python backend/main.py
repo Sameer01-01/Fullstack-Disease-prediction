@@ -121,3 +121,7 @@ def predict_parkinsons(data: ParkinsonsInput):
         return {"prediction": result}
     except Exception as e:
         return {"error": str(e)}
+
+
+# to run backend command 
+# uvicorn main:app --host 0.0.0.0 --port 8000 --reload
